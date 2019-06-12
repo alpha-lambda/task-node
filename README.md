@@ -1,4 +1,4 @@
-# @alpha-lambda/task
+# @alpha-lambda/tasks
 
 This is a simple task management library, for use in Lambda, connected to SQS and maybe Kinesis.
 
@@ -23,10 +23,10 @@ module.exports = tasks([
         },
         validate(task) {
             // optional, verify that the task details match some schema you have
-        }
+        },
         format(detail) {
             // optional, called before validate
-        }
+        },
     },
 ]);
 ```

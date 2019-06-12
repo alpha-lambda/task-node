@@ -334,7 +334,7 @@ test('rejects if schedule rejects', async t => {
     }
 });
 
-test('fromJSON does not call format (already formatted', t => {
+test('fromJSON does not call format (already formatted)', t => {
     const format = sinon.stub();
 
     const Task = tasks([
