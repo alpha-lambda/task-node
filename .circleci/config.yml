@@ -34,7 +34,7 @@ jobs:
       - checkout
       - *attach_workspace
       - run: npm run test
-      - run: cat ./coverage/lcov.info | coveralls
+      - run: npm run coverage
   publish:
     <<: *node_container
     steps:

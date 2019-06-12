@@ -5,7 +5,8 @@
   "main": "tasks.js",
   "scripts": {
     "test": "nyc --all ava",
-    "posttest": "eslint . "
+    "posttest": "eslint . ",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
