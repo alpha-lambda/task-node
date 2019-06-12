@@ -1,0 +1,35 @@
+{
+  "name": "@alpha-lambda/tasks",
+  "version": "1.0.0",
+  "description": "simple task framework",
+  "main": "tasks.js",
+  "scripts": {
+    "test": "nyc --all ava",
+    "posttest": "eslint . ",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpha-lambda/task-node.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "framework"
+  ],
+  "author": "https://github.com/orgs/alpha-lambda/people",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alpha-lambda/task-node/issues"
+  },
+  "homepage": "https://github.com/alpha-lambda/task-node#readme",
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "nyc": "^14.1.1",
+    "publish": "^0.6.0",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {}
+}
